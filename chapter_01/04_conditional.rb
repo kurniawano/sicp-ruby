@@ -1,11 +1,10 @@
 def abs(x)
-  case
-      when x > 0
-        x
-      when x == 0
-        0
-      else
-        -x
+  if x > 0
+    x
+  elsif x == 0
+    0
+  else
+    -x
   end
 end
 
@@ -17,7 +16,7 @@ def greater_or_equal(x, y)
   x > y || x == y
 end
 
-puts greater_or_equal 10, 5
+greater_or_equal 10, 5
 greater_or_equal 10, 10
 greater_or_equal 10, 15
 
